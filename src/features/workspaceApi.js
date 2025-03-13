@@ -10,7 +10,12 @@ export const workspaceApi = apiSlice.injectEndpoints({
               body,
             }),
 
-          }),      
+          }),  
+        GetWorkspaces: builder.query({
+          query: ()=>{
+            url
+          }
+        })      
     }),
 
 })
